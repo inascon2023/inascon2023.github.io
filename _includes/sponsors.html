@@ -1,0 +1,48 @@
+<!-- Begin Team List-->
+
+<section id="team" class="team">
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <h3>Information for Sponsors about INASCON 2022 can be found <a href="{{ site.baseurl }}assets/Flyer_INASCON2022.pdf" style="color:#b85c5c;">here</a>.</h3>
+            <h3>We are thankful for support by the following Sponsors.</h3>
+            <div class="row">
+                {% for member in site.data.sponsors %}{% if member.team != null %}
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <a href="{{member.website}}" target="_blank">
+                            <div class="img-square">
+                        <img src="{{ site.baseurl }}assets/images/{{ member.thumbnailUrl }}" class="img-content-sponsor"
+                            alt="">
+                        </div>
+                        </a>
+
+                        <h4>{{ member.name }} </h4>
+                        
+                        <ul class="list-inline social-buttons">
+                            {% for network in member.social %}
+                            <li>
+                                <a href="{{ network.url }}">
+                                    <i class="fa fa-{{ network.title }}"></i>
+                                </a>
+                            </li>
+                            {% endfor %}
+
+                        </ul>
+                    </div>
+                </div>
+                {% endif %} {% endfor %}
+            </div>
+
+            
+            
+        </div>
+    </div>
+
+</section>
+<!-- End Team List -->
