@@ -7,7 +7,7 @@ show_tile: True
 image: sections-background/LandingPage_Screenshot_20220324_edit.png
 permalink: registration
 ---
-# Registration is closed!
+# Registration starts in 2023!
 
 ### Who can register?
 
