@@ -41,7 +41,7 @@ If you don't have any research experience because you are still in your bachelor
 *Number of your semesters you studied so far* <br>
 *Short(!) description why you want to go to INASCON*
  
-Still worried? Drop us a message (<a href="mailto:inascon2022@unibas.ch">inascon2022@unibas.ch</a>) – we are happy to answer your questions. 
+Still worried? Drop us a message (<a href="mailto:info-inascon2023@unibas.ch">info-inascon2023@unibas.ch</a>) – we are happy to answer your questions. 
 
 
 
