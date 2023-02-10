@@ -8,4 +8,4 @@ show_tile: false
 permalink: registration
 ---
 
-{% include registration.html %}
+{% include landing.html %}
