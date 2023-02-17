@@ -9,11 +9,15 @@
 		<span>{{ site.subtitle }}</a>
 	
 		
-	<span class="v_line"></span>
+	<div id="content"></div>
 	
-	{% if window.innerWidth >= 800 %}{{ 
+	<script>
 
-	<a class="logo_sponsors">
+    		var el = document.getElementById('content');
+    		var content;
+
+    		if  ((window.innerWidth < 800 )) {
+        		content = '<a class="logo_sponsors">
 		<img src = "{{ site.baseurl }}assets/images/SNI_logo.jpg" href="https://nanoscience.ch/de/" target="_blank">
 
                 <img src = "{{ site.baseurl }}assets/images/sensirion.png" href="https://sensirion.com/de/" target="_blank">
@@ -37,9 +41,15 @@
                 <img src = "{{ site.baseurl }}assets/images/PVLogo-4c.jpg" href="https://www.pfeiffer-vacuum.com/de/" target="_blank">
 
                 <img src = "{{ site.baseurl }}assets/images/SPECS_logo_blue_blue.jpg" href="https://www.specs-group.com/specs/products/" target="_blank">
-        </a>
+        		</a>';
+			
+    		}
+   		else {
+        		content = '';
+    		}
+
+    		el.insertAdjacentHTML('afterbegin', content);
 		
-	}} | {% endif %}{{ }}
 	<nav>
 		 <a href="#menu">Menu</a>
 	</nav>
