@@ -13,10 +13,10 @@
 	
 	<script>
 
-    		var el = document.getElementById('content');
-    		var content;
-
-    		if  (window.innerWidth > 800 ) {
+    	var el = document.getElementById('content');
+    	var content;
+	$(window).resize(function() {
+    		if  (($(window).innerWidth > 800 ) {
         		content = '<a class="logo_sponsors">';
 			content += '<img src = "{{ site.baseurl }}assets/images/SNI_logo.jpg" href="https://nanoscience.ch/de/" target="_blank">';
                 	content += '<img src = "{{ site.baseurl }}assets/images/sensirion.png" href="https://sensirion.com/de/" target="_blank">';
@@ -36,8 +36,9 @@
    		else {
         		content = '';
     		}
+	}
 
-    		el.insertAdjacentHTML('afterbegin', content);
+    	el.insertAdjacentHTML('afterbegin', content);
 		
 	</script>
 		
